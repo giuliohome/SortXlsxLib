@@ -17,7 +17,7 @@ namespace SortXlsxLib
 
             Worksheet ws = (Worksheet)wb.Worksheets[sheet];
 
-            var tab = (Range)ws.Range[ws.Cells[start_row, start_col], ws.Cells[14001, end_col]];
+            var tab = (Range)ws.Range[ws.Cells[start_row, start_col], ws.Cells[end_row, end_col]];
 
             tab.Sort(ws.Cells[start_row, sort_col], XlSortOrder.xlAscending);
 
